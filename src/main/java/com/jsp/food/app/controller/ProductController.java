@@ -31,7 +31,7 @@ public class ProductController {
 	public ModelAndView saveUser(@ModelAttribute("product") Products p) {
 		ModelAndView mav = new ModelAndView("adminoptions");
 		productDao.saveProduct(p);
-		mav.addObject("message", "Product saved successfully");
+		mav.addObject("msg", "Product saved successfully");
 		return mav;
 	}
 
