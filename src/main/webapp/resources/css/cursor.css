@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* .circle{
+  height:24px;
+  width:24px;
+  border-radius:24px;
+  background-color:black;
+  position:absolute;
+  top:0;
+  left:0;
+} */
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+/*   background-color: white; */
+  height: 100vh;
+  cursor:none;
+}
+
+.cursor {
+  cursor:alias;
+  pointer-events: none;
+  position: fixed;
+  display: block;
+  border-radius: 0;
+  /*mix-blend-mode: difference;*/
+  top: 0;
+  left: 0;
+  z-index: 9999999999999999;  
+}
+
+.cr_circle {
+    position: absolute;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #ffb56b, #f89d63, #ef865e, #e36e5c, #d5585c, #c5415d);
+}

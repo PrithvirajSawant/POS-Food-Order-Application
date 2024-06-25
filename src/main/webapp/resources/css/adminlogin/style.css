@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  cursor:none; /*CURSOR*/
+}
+
+.ring {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ring i {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #000000;
+  transition: 0.5s;
+}
+.ring i:nth-child(1) {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 6s linear infinite;
+}
+.ring i:nth-child(2) {
+  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+  animation: animate 4s linear infinite;
+}
+.ring i:nth-child(3) {
+  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+  animation: animate2 10s linear infinite;
+}
+.ring:hover i {
+  border: 6px solid var(--clr);
+  filter: drop-shadow(0 0 20px var(--clr));
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.login {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  /*border: 2px solid red; */
+}
+.login h2 {
+  font-size: 2em;
+  color: #000000;
+}
+.login .inputBx {
+  position: relative;
+  width: 100%;
+}
+.login .inputBx input {
+  position: relative;
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid #000000;
+  border-radius: 40px;
+  font-size: 1.2em;
+  color: #000000;
+  box-shadow: none;
+  outline: none;
+}
+.login .inputBx input[type="submit"] {
+  width: 100%;
+  background: #000000;
+  background: linear-gradient(45deg, #ff357a, #fff172);
+  border: none;
+  
+}
+
+.login .inputBx input[type="submit"]:hover {
+  cursor: pointer;
+  border: 2px solid #ffffff;
+}
+
+.login .inputBx input::placeholder {
+  color: rgba(0, 0, 0, 0.75);
+}
+.login .links {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.login .links a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.img2{
+	display: flex;
+	position: fixed;
+	padding: 10px;
+	bottom: 9;
+	height: 300px;
+	margin-left: 280px;
+	margin-bottom: 100px;
+}
+
+.img3{
+position: fixed;
+display: flex;
+margin-left: -90px;
+margin-top: 300px;
+}
+
+/* CURSER */
+.cursor {
+  pointer-events: none;
+  position: fixed;
+  display: block;
+  border-radius: 0;
+  mix-blend-mode: difference;
+  top: 0;
+  left: 0;
+  z-index: 9999999999999999;  
+}
+
+.circle {
+    position: absolute;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #ffb56b, #f89d63, #ef865e, #e36e5c, #d5585c, #c5415d);
+}
+
+.login:hover .circle {
+  background: #ffffff; /* Change cursor color to white */
+}
+
+
+/*CURSOR 2*/
+

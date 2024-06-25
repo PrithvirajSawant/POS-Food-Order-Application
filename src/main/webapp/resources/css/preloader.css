@@ -1,0 +1,20 @@
+#pre_loder{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    /* background: #000000 url(/assets/loader2.gif) no-repeat center center; */
+    /*background: #ffffff;*/
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    /* z-index: 1; */
+    /* display: none; */
+    /*border: 2px solid black;*/
+}
+
+  #loader3{
+    /*border: 2px solid red;*/ 
+    height: 300px;
+    width: 300px;
+    color: #f5f7f7;
+  }
